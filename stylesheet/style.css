@@ -1,0 +1,66 @@
+body {
+	background-color: #fffffb;
+}
+
+#header{
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	color:#969696;
+}
+
+#header:hover{
+	color:#BECEFF;
+	transition: color 3s;
+
+}
+
+.dot {
+	height:20px;
+	width:20px;
+	margin:3%;
+	margin-top: .2%;
+	position:relative;
+	left:29.5%;
+	border-radius:100%;
+	display: inline-block;
+	z-index:-100;
+
+	animation-name: color-change;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes color-change{
+	0% {background-color: #FF6C6C; opacity:1; box-shadow: 2px 2px 2px #C65454;}
+	11%	{background-color: #FF6C6C; opacity:0.5;}
+	22% {background-color: #FCA362; opacity:1; box-shadow: 2px 2px 2px #C88351;}
+	33% {background-color: #FCA362; opacity:0.5;}
+	44% {background-color: #A6FF94; opacity: 1; box-shadow: 2px 2px 2px #84C977;}
+	55%	{background-color: #A6FF94; opacity: 0.5;}
+	66% {background-color: #94CBFF; opacity:1; box-shadow: 2px 2px 2px #7198BD;}
+	77% {background-color: #94CBFF; opacity:0.5;}
+	88% {background-color: #ED94FF;opacity:1;box-shadow: 2px 2px 2px #975FA3;}
+	100% {background-color: #E5A0FB;opacity:0.5;}
+}
+
+
+.flex-container {
+	display:flex;
+	background-color: #ECC8F3;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width:70%;
+	margin-left:15%;
+}
+
+.flex-container > div{
+	background-color: #EDEDED;
+	width:200px;
+	height:200px;
+	margin:3%;
+	text-align:center;
+	font-size:100px;
+	color:#757575;
+
+}
